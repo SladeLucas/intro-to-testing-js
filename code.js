@@ -25,5 +25,9 @@ function isVowel(x){
     return (x == 'a') || (x == "A") || (x == 'e') || (x == 'E') || (x == 'i') || (x == 'I') || (x == 'o') || (x == 'O') || (x == 'u') || (x == 'U');
 }
 function add(x, y) {
-    return parseFloat(x) + parseFloat(y);
+    if (x === NaN, y === NaN) {
+        return NaN
+    }else {
+        return parseFloat(x) + parseFloat(y);
+    }
 }
