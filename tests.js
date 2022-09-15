@@ -29,4 +29,13 @@ describe('sayHello', function() {
     it("should return the string 'Hello, Pat!' when input 'Pat' is executed", function() {
         expect(sayHello('Pat')).toBe('Hello, Pat!');
     });
+    it("should return the string 'Hello, World!' when input 'World' is executed", function() {
+        expect(sayHello()).toBe('Hello, World!');
+    });
+    it("should return the string 'Hello, World!' when input 'undefined' is executed", function() {
+        expect(sayHello(true)).toBe('Hello, World!');
+    });
+    it("should return the string 'Hello, World!' when input 'false' is executed", function(){
+        expect(sayHello(false)).toBe('Hello, World!');
+    });
 })
