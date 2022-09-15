@@ -12,3 +12,12 @@ function sayHello(input) {
 function isFive(x) {
     return x == 5
 }
+function isEven(x) {
+    return (parseFloat(x) % 2 === 0);
+  //  if (typeof x === true){
+  //      return false
+  //  }else if (x === false){
+  //      return false
+  //  }
+  //      return (x % 2 === 0);
+}
